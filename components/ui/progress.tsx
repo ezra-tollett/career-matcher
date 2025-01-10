@@ -2,7 +2,7 @@ import React from 'react';
 
 interface ProgressProps {
     className?: string;
-    [key: string]: any;
+    value: number;
 }
 
 export function Progress(props: ProgressProps) {
