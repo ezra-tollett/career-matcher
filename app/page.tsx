@@ -197,8 +197,8 @@ const CareerFitter = () => {
       .sort((a, b) => b.matchScore - a.matchScore)
       .slice(0, 10);
   };
-
-  const handleSelectMBTI = (type: string) => {
+  type T = (type: string) => void
+  const handleSelectMBTI: T = (type) => {
     setProfile(prev => ({ ...prev, mbti: type }));
     setStep(1);
   };
